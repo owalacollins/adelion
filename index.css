@@ -98,10 +98,6 @@ video{
   width: 100%; 
   height: auto;
 }
-frame {
-width: 100%; 
-  height: auto;
-}
 .desc{
     padding:10px;
     text-align: center;
