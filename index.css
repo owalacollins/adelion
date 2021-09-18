@@ -3,41 +3,87 @@
     box-sizing: border-box;
    
 }
+/*head*/
 header{
-  
- height: 200px; 
- display: flex;
- justify-content: center;
- align-items: center;
+    background-image: url(06.png); 
+    height: 350px;
+    background-size: cover;
+    position: relative;
    
 }
+nav{
+    background:linear-gradient(30deg ,red, yellow, green);
+    height: 40px;
+    top: 0px;
+    width: 100%;
+    position: absolute;
+    
+    
+}
+nav ul li{
+    float: left;
+    margin: 0px 12px;
+    position: relative;
+}
+nav ul li a{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+nav ul li ul{
+    display:none;
+   position: absolute;
+   background-color: black;
+  padding: 0px 10px;
+}
+nav ul li ul li{
+    border-bottom: white solid 1px;
+    padding: 0px 2px;
+}
+nav ul li ul li :hover{
+    background-color: gray;
+}
+nav a {
+    text-decoration: none;
+}
+nav ul li ul li a{
+ color: white;
+}
+ nav ul li:hover ul{
+     display: block;
+ }
+
+h1{
+    text-decoration: overline;
+ padding-top: 6vh;
+ color: cyan;
+text-align:center;
+font-family: fantasy;
+}
+.logo{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0px auto;
+    border: solid 2px rgb(253, 253, 253);
+    
+}
+
+
+
+/*body*/
 body{
-    background-color: black;
 display:flex;
 flex-direction:column;
 }
-.main{
-    background-color: rgb(177, 190, 177);
+main{
+    padding-top: 10px;
+background-image: url(lion.jpg);
 }
 
-h1{
- padding-top: 20px;
- letter-spacing: 10px;
- color: cyan;
-text-align:center;
 
-font-family: fantasy;
-
-
-}
-header img{
-    height: 150px;
-    display: block;
-   margin: 0 auto;
-   padding-bottom: 20px;
-}
 .gallary{
-    border: red 1px solid;
+    border: red solid 1px;
 }
 .responsive{
    
@@ -52,25 +98,30 @@ video{
   width: 100%; 
   height: auto;
 }
+frame {
+width: 100%; 
+  height: auto;
+}
 .desc{
     padding:10px;
     text-align: center;
+    color: white;
 }
 /*footer*/
 
 footer{
- background-color: rgb(48,48,47);
+ background-color: rgb(0, 0, 0);
  padding: 4vh;
  height: 100%;
 margin-top:auto;
  
  
 }
-li{
+.footer-col li,li{
 list-style-type: none;
 line-height: 30px;
 }
-li a{
+.footer-col li a{
     text-decoration: none;
     color: blue;
 }
@@ -105,7 +156,7 @@ span{
    margin-left:10px ;
    color: blue;
 }
-li :hover{
+.footer-col li :hover{
     padding-right: 10px;
 }
 .footer-bottom{
@@ -129,10 +180,11 @@ li :hover{
         width: 25%;
         padding: 0 15px;
         }
+      
 }@media screen and (max-width:500px){
     .responsive{
         width: 100%;
-        padding: 5px 8px;
+        padding: 10px 0px;
     }
     .footer-col{
         width: 100%;
